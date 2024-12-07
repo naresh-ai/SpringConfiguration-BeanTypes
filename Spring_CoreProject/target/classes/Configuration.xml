@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Your bean definitions -->
+
+
+
+
+<bean name="studentone" class="Spring_Lifecycle.Student" init-method="init" destroy-method="destroy">
+
+
+        <property name="id" value="1" />
+        <property name="fname" value=" Jay" />
+        <property name="lname" value="ManoharLal" />
+    </bean>
+<bean name="classy" class="Spring_Lifecycle.Class">
+    <property name="clgowner" value="Petkar" />
+</bean>
+    <bean name="c2" class="Spring_Lifecycle.ClassTwo">
+        <property name="carname" value="Honda"/>
+        <property name="ownername" value="PetkarSaheb"/>
+    </bean>
+    <bean name="c3" class="Spring_Lifecycle.ClassFour">
+        <property name="subjectname" value="Math"/>
+
+
+    </bean>
+    </beans>

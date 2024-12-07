@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+        <!-- Your bean definitions -->
+
+
+        <!-- Define a GreetingService bean -->
+    <bean name="greetingService" class="org.example.GreetingService">
+        <property name="message" value="Basic configuration Spring " />
+      <!--  used collecton     -->
+
+        <property name="messages">
+            <list>
+                <value>Hello</value>
+                <value>Welcome</value>
+                <value>Good Morning</value>
+            </list>
+        </property>
+        <property name="message">
+            <map>
+                <entry key="1" value="om"></entry>
+                <entry key="2" value="sara"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
